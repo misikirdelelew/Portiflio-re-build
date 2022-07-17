@@ -134,20 +134,10 @@ h1 {
   align-self: center;
 }
 
-.card > div > img {
+.card>div>img {
   width: 100%;
   transition: all ease-in-out 0.3s;
 }
-
-/* .work-section {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  row-gap: 104px;
-  padding-bottom: 104px;
-  padding-top: 104px;
-  padding-left: 24px;
-  padding-right: 24px;
-} */
 
 .card {
   display: flex;
@@ -231,21 +221,6 @@ h1 {
   color: white;
   background-color: #6070ff;
 }
-
-/* .resume-btn {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  border-color: #7f8cff;
-  background-color: white;
-  border: 1px solid #4c5ace;
-  border-radius: 8px;
-  width: 155px;
-  height: 48px;
-  color: #396df2;
-  text-align: center;
-  letter-spacing: 0.03em;
-} */
 
 .work-btn:active,
 .resume-btn:active {
@@ -450,12 +425,6 @@ h1 {
     width: 90%;
     max-width: 768px;
   }
-
-  /* .work-section {
-    grid-template-rows: repeat(4, auto);
-    width: 83.5%;
-    margin: 0 auto;
-  } */
 
   .about {
     flex: 1;
