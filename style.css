@@ -1,0 +1,753 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #e5e5e5;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+#connect {
+  color: #8161cc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#letsConnect {
+  color: #8161cc;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 58px 24px;
+  position: relative;
+}
+
+.logo {
+  color: #8161cc;
+  width: 100px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.menuNav {
+  width: 24px;
+  height: 24px;
+  color: #8161cc;
+}
+
+.main-part {
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#close-icon {
+  display: none;
+}
+
+.headline-section {
+  background: #fff;
+  border-bottom-left-radius: 80px;
+  width: 100vw;
+  background-image: url("images/bac-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-inline-start: 0;
+  gap: 15px;
+}
+
+.infoline {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-section {
+  padding: 206px 24px 100px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-section h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  letter-spacing: 0;
+  width: 80%;
+}
+
+.info-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  width: 70%;
+}
+
+.info-section h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #7f8cff;
+}
+
+.work-section {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  row-gap: 104px;
+  padding-bottom: 104px;
+  padding-top: 104px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.section-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-info img {
+  margin-top: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.contact-info img {
+  width: 134px;
+  height: 5px;
+  align-self: center;
+}
+
+.card > div > img {
+  width: 100%;
+  transition: all ease-in-out 0.3s;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 17px;
+  gap: 15px;
+  border: 1px solid #dfe1e6;
+  color: #7a869a;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.works h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.works h3 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  padding-right: 12px;
+}
+
+.works h4 {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.works p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.work-btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-color: #7f8cff;
+  background-color: white;
+  border: 1px solid #4c5ace;
+  border-radius: 8px;
+  width: 124px;
+  height: 48px;
+  color: #396df2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.resume-btn {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-color: #7f8cff;
+  background-color: white;
+  border: 1px solid #4c5ace;
+  border-radius: 8px;
+  width: 155px;
+  height: 48px;
+  color: #396df2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.work-btn:hover,
+.resume-btn:hover {
+  color: white;
+  background-color: #6070ff;
+}
+
+.work-btn:active,
+.resume-btn:active {
+  color: white;
+  background-color: #2230d2;
+}
+
+#about-me {
+  background: white;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 40px 80px 40px;
+}
+
+.about-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 114px 24px;
+  gap: 15px;
+  border-top-right-radius: 80px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.detail-info {
+  padding-top: 25px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-social {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-inline-start: 0;
+  gap: 10px;
+}
+
+.contactform-section {
+  box-sizing: border-box;
+  width: 100%;
+  background: #6070ff;
+  background-repeat: no-repeat;
+  background-position: right;
+  border-top-left-radius: 80px;
+  background-image: url(./images/bac-mobile.svg);
+  padding: 103px 24px 8px 24px;
+}
+
+.ccontact-part {
+  background-color: white;
+}
+
+.item-info h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: left;
+  color: black;
+  width: 280px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.contact-info h2 {
+  font-size: 40px;
+  line-height: 52px;
+  color: white;
+  align-self: center;
+}
+
+.contact-info p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contact-input-form {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  padding-bottom: 32px;
+}
+
+.contact-inputs {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 52px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.contact-txt {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+  border-radius: 8px;
+  width: 100%;
+  height: 175px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.contact-button {
+  border-radius: 8px;
+  border-color: white;
+  width: 140px;
+  height: 48px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.contact-button:hover {
+  color: white;
+  background-color: #6070ff;
+}
+
+.contact-button:active {
+  color: white;
+  background-color: #2230d2;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 4.5em;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .header-image-mobile {
+    display: none;
+  }
+
+  .menuNav {
+    width: 259px;
+    height: 40px;
+    text-align: center;
+    margin-right: 154px;
+  }
+
+  .mainMenu {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .lstItem {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    width: auto;
+    height: 20px;
+    color: #344563;
+    transition: all 1s;
+  }
+
+  .lstItem:hover {
+    transform: scale(1.3);
+  }
+
+  #close-icon {
+    display: none;
+  }
+
+  .closeButton-class {
+    padding: 12px;
+    background-color: #fff;
+    background-image: url(./images/closebtn.png);
+    background-repeat: no-repeat;
+    float: right;
+    align-self: flex-end;
+  }
+
+  .headline-section {
+    background-image: url("images/bac-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+  }
+
+  .info-section {
+    padding: 314px 260px 325px 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .info-section h1 {
+    font-size: 48px;
+    line-height: 52px;
+    width: 80%;
+  }
+
+  .info-section p {
+    font-size: 20px;
+    line-height: 28px;
+    width: 90%;
+    max-width: 768px;
+  }
+
+  .about {
+    flex: 1;
+    padding-left: 140px;
+  }
+
+  .detail-info {
+    padding-right: 140px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    flex: 1;
+  }
+
+  .about p {
+    width: 90%;
+  }
+
+  .about-info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .item-info h3 {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    flex: 1;
+  }
+
+  .card-bottom {
+    flex-direction: row-reverse;
+  }
+
+  .card-top {
+    flex-direction: row;
+  }
+
+  .work-section {
+    grid-template-rows: repeat(4, auto);
+    width: 83.5%;
+    margin: 0 auto;
+  }
+
+  .works h2 {
+    font-size: 40px;
+    line-height: 52px;
+    width: 85%;
+  }
+
+  .works h3 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .works h4 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7a869a;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .work-languages ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  .work-languages {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .ul-categories {
+    display: none;
+  }
+
+  .ul-categories1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 18px;
+    padding-bottom: 15px;
+  }
+
+  .works p {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  .works-img {
+    padding-left: 16.6px;
+    padding-right: 16.6px;
+    flex: 1;
+  }
+
+  .contactform-section {
+    background-image: url(./images/bac-desktop.svg);
+  }
+
+  .contact-info p {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .contact-inputs {
+    height: 51px;
+  }
+
+  .contact-txt {
+    height: 170px;
+  }
+
+  .contact-form {
+    width: 78%;
+    align-self: center;
+  }
+}
+
+#portfoliosection {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#aboutsection {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#contactsection {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+@media screen and (max-width: 767px) {
+  /* Responsive nav bar */
+  .mainMenu {
+    width: 100%;
+    height: 100vh;
+    background: #6070ff;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+
+  .lstItem {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #fff;
+    position: absolute;
+  }
+
+  #porfolio {
+    margin-top: 106px;
+    text-decoration: none;
+    margin-left: 24px;
+  }
+
+  #about {
+    margin-top: 10rem;
+    margin-left: 24px;
+    text-decoration: none;
+  }
+
+  #contact {
+    margin-top: 13rem;
+    margin-left: 24px;
+    text-decoration: none;
+  }
+
+  .header-image-mobile {
+    z-index: 999;
+    display: block;
+    position: absolute;
+  }
+
+  .active .mainMenu {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .active .menuNav #close-icon {
+    display: block;
+    z-index: 999;
+    position: absolute;
+    color: #fff;
+    font-size: 36px;
+  }
+
+  .active .menu .header-image-mobile {
+    display: none;
+  }
+
+  nav .menuItem {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(65, 65, 246, 0.5);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+
+  nav .menuItem .hambergerClose {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .hambergerOpen {
+    display: block;
+  }
+
+  nav .menuItem li a:hover {
+    background: none;
+    color: rgb(249, 249, 245);
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
