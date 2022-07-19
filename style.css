@@ -97,7 +97,7 @@ ul {
   align-self: center;
 }
 
-.card > div > img {
+.card>div>img {
   width: 100%;
   transition: all ease-in-out 0.3s;
 }
@@ -508,10 +508,9 @@ nav .menuItem {
 
 nav .menuItem li a {
   display: inline-block;
-  padding: 15px;
+  padding: 13px;
   text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(67, 31, 247);
+  color: #FFFFFF;
   font-size: 25px;
   transition: 0.2s ease;
 }
@@ -532,6 +531,7 @@ nav .menuItem .hambergerClose,
   font-size: 2rem;
   display: none;
   cursor: pointer;
+  color: #FFFFFF;
 }
 
 nav .logo {
@@ -539,6 +539,34 @@ nav .logo {
   cursor: pointer;
   padding: 20px;
 }
+
+#porfolio {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+#about {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+#contact {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
 
 @media (max-width: 800px) {
   nav .menuItem {
@@ -551,7 +579,7 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(60, 0, 61);
+    background: #6070FF;
     transition: top 1s ease 0s;
     display: none;
   }
