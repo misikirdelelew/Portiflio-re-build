@@ -11,9 +11,9 @@ menuItems.forEach(item => {
 function show() {
     menuItem.style.display = 'flex';
     menuItem.style.top = '0';
-};
+}
 hambergerOpen.addEventListener('click', show);
 function close() {
-    menuItem.style.top = '-101%';
-};
+    menuItem.style.top = '-101%'
+}
 hambergerClose.addEventListener('click', close);
