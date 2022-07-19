@@ -8,7 +8,6 @@ menuItems.forEach(item => {
         close();
     });
 });
-
 function show() {
     menuItem.style.display = 'flex';
     menuItem.style.top = '0';
