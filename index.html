@@ -13,26 +13,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!-- Navbar -->
-    <main class="main-section">
-        <nav>
-            <div class="nav-part">
-                <a href="#">My Logo</a>
-                <div class="nav-desktop">
-                    <a href="#" class="link-item">Portfolio</a>
-                    <a href="#" class="link-item">About</a>
-                    <a href="#" class="link-item">Contact</a>
-                </div>
-                <nav class="mobile-view">
-                    <img src="./images/union.svg" alt="mobile-view">
-                </nav>
-            </div>
-        </nav>
-    </main>
+    <nav>
+        <div class="logo">
+            <h1>mylogo</h1>
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">portifolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+        </ul>
+    </nav>
+
     <!-- Information Section -->
     <section class="headline-section">
         <div class="info-section">
@@ -297,6 +296,7 @@
             </div>
         </div>
     </section>
+    <script src="./app.js"></script>
 </body>
 
 </html>
