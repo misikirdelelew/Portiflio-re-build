@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template 1 portifolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,100&family=Quantico:ital@1&family=Ubuntu:wght@400;500&display=swap"
         rel="stylesheet">
@@ -19,19 +20,22 @@
 
 <body>
     <!--Nav part begins-->
-    <nav>
-        <div class="logo">
-            <h1>Mylogo</h1>
+    <header class="header">
+        <div class="wraper-logo">
+            <a href="#" class="logo">My Logo</a>
         </div>
-        <div class="hambergerOpen"><i class="fa fa-bars"></i></div>
-        <ul class="menuItem">
-            <li><a href="#portfoliosection" id="porfolio">portifolio</a></li>
-            <li><a href="#aboutsection" id="about">About</a></li>
-            <li><a href="#contactsection" id="contact">Contact</a></li>
-            <li class="hambergerClose"><i class="fa fa-times"></i>
-        </ul>
-    </nav>
-     <!--Navigation part Ends-->
+        <nav class="menuNav">
+            <a href="#"><img src="./images/union.svg" alt="Menu Icon" class="header-image-mobile"></a>
+            <i class="fa fa-close" id="close-icon"></i>
+
+            <ul class="mainMenu">
+                <li><a href="#portfoliosection" class="lstItem" id="porfolio">Portfolio</a></li>
+                <li><a href="#aboutsection" class="lstItem" id="about">About</a></li>
+                <li><a href="#contactsection" class="lstItem" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Navigation part Ends-->
     <!-- Information Section -->
     <section class="headline-section" id="portfoliosection">
         <div class="info-section">
@@ -43,7 +47,7 @@
                 and experience! If you like what you see and have a project you need coded, don't hestiate to contact
                 me.
             </p>
-            <h3>LET'S CONNECT</h3>
+            <h3 id="connect">LET'S CONNECT</h3>
             <div>
                 <ul class="social-media-icons">
                     <li>
@@ -203,7 +207,7 @@
                 have a project you need coded, don't
                 hestiate to contact me.
             </p>
-            <h3>LET'S CONNECT</h3>
+            <h4 id="letsConnect">LET'S CONNECT</h4>
             <div>
                 <ul class="icons-social">
                     <li>
