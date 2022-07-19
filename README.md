@@ -23,7 +23,7 @@ You need to download the linters folder and copy it to your project You can clon
 Install the linters folder to your project. Install the fontawesome for icons in the project (Preferrable)
 ## Deployment link
 
-My portifolio website can be viewed at: https://mishdm.github.io/portfolio-page/
+My portifolio website can be viewed at: https://mishdm.github.io/Portiflio-re-build/
 
 
 ### Authors
