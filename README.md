@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 You need to have a code editor to be able to run the commands in the terminal. VSCode is most preferred
 
 ## Setup
-You need to download the linters folder and copy it to your project You can clone the project through git clone https://github.com/MishDM/portfolio-page.git
+You need to download the linters folder and copy it to your project You can clone the project through git clone https://github.com/MishDM/Portiflio-re-build.git
 
 ## Install
 Install the linters folder to your project. Install the fontawesome for icons in the project (Preferrable)
