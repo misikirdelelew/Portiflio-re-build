@@ -10,46 +10,6 @@ body {
   background-color: #e5e5e5;
 }
 
-/*
-.nav-part {
-  width: 100vw;
-  height: 50px;
-  display: flex;
-  background-color: white;
-}
-
-.nav-part a {
-  text-decoration: none;
-  width: 130px;
-  height: 20px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  padding-top: 24px;
-  text-align: center;
-  color: #6070ff;
-}
-
-.nav-desktop {
-  padding-top: 22px;
-  visibility: hidden;
-}
-
-.link-item {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #344563;
-  text-decoration: none;
-}
-
-.mobile-view {
-  cursor: pointer;
-  margin-left: auto;
-  padding-top: 15px;
-  padding-right: 36px;
-} */
-
 .headline-section {
   background: #fff;
   border-bottom-left-radius: 80px;
@@ -66,6 +26,15 @@ body {
   list-style-type: none;
   padding-inline-start: 0;
   gap: 15px;
+}
+
+ul {
+  display: none;
+}
+
+.infoline {
+  display: flex;
+  flex-direction: row;
 }
 
 .info-section {
@@ -525,40 +494,40 @@ body {
 }
 
 nav {
-  background: rgb(246, 242, 242);
-  color: rgb(143, 169, 249);
+  background: rgb(255, 254, 254);
+  color: rgb(67, 31, 247);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav .mainMenu {
+nav .menuItem {
   display: flex;
   list-style: none;
 }
 
-nav .mainMenu li a {
+nav .menuItem li a {
   display: inline-block;
-  padding: 15px;
+  padding: 13px;
   text-decoration: none;
-  text-transform: lowercase;
-  color: rgb(64, 37, 240);
-  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(67, 31, 247);
+  font-size: 25px;
   transition: 0.2s ease;
 }
 
-nav .mainMenu li a:hover {
-  background: rgb(220 209 202);
+nav .menuItem li a:hover {
+  background: rgb(249, 248, 248);
 }
 
-nav .openMenu {
+nav .hambergerOpen {
   font-size: 2rem;
   margin: 20px;
   display: none;
   cursor: pointer;
 }
 
-nav .mainMenu .closeMenu,
+nav .menuItem .hambergerClose,
 .icons i {
   font-size: 2rem;
   display: none;
@@ -568,11 +537,11 @@ nav .mainMenu .closeMenu,
 nav .logo {
   margin: 2px;
   cursor: pointer;
-  text-transform: uppercase;
+  padding: 20px;
 }
 
 @media (max-width: 800px) {
-  nav .mainMenu {
+  nav .menuItem {
     height: 100vh;
     position: fixed;
     top: 0;
@@ -582,25 +551,25 @@ nav .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(63, 61, 61);
+    background: rgb(60, 0, 61);
     transition: top 1s ease 0s;
     display: none;
   }
 
-  nav .mainMenu .closeMenu {
+  nav .menuItem .hambergerClose {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;
   }
 
-  nav .openMenu {
+  nav .hambergerOpen {
     display: block;
   }
 
-  nav .mainMenu li a:hover {
+  nav .menuItem li a:hover {
     background: none;
-    color: rgb(229, 222, 21);
+    color: rgb(249, 249, 245);
   }
 
   .icons i {

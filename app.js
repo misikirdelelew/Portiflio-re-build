@@ -1,13 +1,13 @@
-const mainMenu = document.querySelector('.mainMenu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-const menu_items = document.querySelectorAll('nav .mainMenu li a');
+const menuItem = document.querySelector('.menuItem');
+const hambergerClose = document.querySelector('.hambergerClose');
+const hambergerOpen = document.querySelector('.hambergerOpen');
+const menu_items = document.querySelectorAll('nav .menuItem li a');
 
 
 
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
+hambergerOpen.addEventListener('click', show);
+hambergerClose.addEventListener('click', close);
 
 // close menu when you click on a menu item 
 menu_items.forEach(item => {
@@ -17,9 +17,9 @@ menu_items.forEach(item => {
 })
 
 function show() {
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
+    menuItem.style.display = 'flex';
+    menuItem.style.top = '0';
 }
 function close() {
-    mainMenu.style.top = '-100%';
+    menuItem.style.top = '-101%';
 }
