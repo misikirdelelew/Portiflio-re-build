@@ -120,13 +120,13 @@ projects.forEach((element, k) => {
     cardDisplay.innerHTML += myPopup
     work.appendChild(cardDisplay);
 });
-// function is to create div and append it to body and add class to it
+// function is to create div element and append to the body of the page
 function creatDiv(event) {
     const popup = document.createElement('div');
     document.body.append(popup);
     popup.classList.add('popupDisplay');
 
-    // add elements
+    // adding all the elements on the div
     const header = document.createElement('div');
     header.classList.add('headerDisplay');
     const heading = document.createElement('h2');
@@ -149,41 +149,48 @@ function creatDiv(event) {
     closeButton.id = 'close-button';
 
     // append elements inside the div
-    popup.append(
-        header,
-        heading,
-        closeButton,
-        proimage,
-        positionpart,
-        prodescription,
-        languagepart,
-        programmingtype,
-        projectbtncontainer,
-    );
-    header.append(heading, closeButton);
-    positionpart.append(prodescription, languagepart, programmingtype, projectbtncontainer);
-    languagepart.append(programmingtype, projectbtncontainer);
-    projectbtncontainer.append(btnseelive, btnseesource);
+    popup.append(header);
+    popup.append(heading);
+    popup.append(closeButton);
+    popup.append(proimage);
+    popup.append(positionpart);
+    popup.append(prodescription);
+    popup.append(languagepart);
+    popup.append(programmingtype);
+    popup.append(projectbtncontainer);
+
+    // Append Header part
+    header.append(heading);
+    header.append(closeButton);
+    //Append description part,programming lamguage and button for seelive and seesoource
+    positionpart.append(prodescription);
+    positionpart.append(languagepart);
+    positionpart.append(programmingtype);
+    positionpart.append(projectbtncontainer);
+    languagepart.append(programmingtype);
+    languagepart.append(projectbtncontainer);
+    projectbtncontainer.append(btnseelive);
+    projectbtncontainer.append(btnseesource);
 
     // add content to the elements of div
-    const projectId = parseInt(event.target.id, 10);
-    heading.textContent = projects[projectId].name;
-    proimage.src = projects[projectId]['image mobile'];
-    prodescription.textContent = projects[projectId].description;
+    const projectnewId = parseInt(event.target.id, 20);
+    heading.textContent = projects[projectnewId].name;
+    proimage.src = projects[projectnewId]['image mobile'];
+    prodescription.textContent = projects[projectnewId].description;
 
-    for (let i = 0; i < projects[projectId].technologies.length; i += 1) {
+    for (let i = 0; i < projects[projectnewId].technologies.length; i += 1) {
         const projectLi = document.createElement('li');
         projectLi.className = 'languages-pp';
-        projectLi.textContent = projects[projectId].technologies[i];
+        projectLi.textContent = projects[projectnewId].technologies[i];
         programmingtype.appendChild(projectLi);
     }
 
     projectbtncontainer.classList.add('btn-cont');
-    btnseelive.href = projects[projectId]['link to live version'];
+    btnseelive.href = projects[projectnewId]['link to live version'];
     btnseelive.classList.add('btn-seelive-pp');
     btnseelive.target = '_blank';
     btnseelive.textContent = 'See Live';
-    btnseesource.href = projects[projectId]['link to source'];
+    btnseesource.href = projects[projectnewId]['link to source'];
     btnseesource.classList.add('btn-seesource-pp');
     btnseesource.target = '_blank';
     btnseesource.textContent = 'See Source';

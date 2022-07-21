@@ -147,7 +147,7 @@ ul {
   align-self: center;
 }
 
-.card > div > img {
+.card>div>img {
   width: 100%;
   transition: all ease-in-out 0.3s;
 }
@@ -948,6 +948,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+
   /* Responsive nav bar */
   .mainMenu {
     width: 100%;
