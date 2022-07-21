@@ -162,7 +162,7 @@ function creatDiv(event) {
     // Append Header part
     header.append(heading);
     header.append(closeButton);
-    //Append description part,programming lamguage and button for seelive and seesoource
+    //Append description part,programming language and button for seelive and seesoource
     positionpart.append(prodescription);
     positionpart.append(languagepart);
     positionpart.append(programmingtype);

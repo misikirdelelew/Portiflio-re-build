@@ -8,6 +8,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #e5e5e5;
+  overflow-x: hidden;
 }
 
 #connect {
@@ -92,6 +93,26 @@ ul {
   gap: 15px;
 }
 
+.contact-1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 103px;
+}
+
+.par-1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-top: 12px;
+}
+
 .infoline {
   display: flex;
   flex-direction: row;
@@ -147,7 +168,7 @@ ul {
   align-self: center;
 }
 
-.card > div > img {
+.card>div>img {
   width: 100%;
   transition: all ease-in-out 0.3s;
 }
@@ -495,7 +516,7 @@ ul {
 }
 
 .btn-seelive-pp {
-  background-image: url(./assets/images/see-live.svg);
+  background-image: url(./images/live.svg);
   background-position: 85% center;
   background-repeat: no-repeat;
   display: flex;
@@ -514,7 +535,7 @@ ul {
 }
 
 .btn-seesource-pp {
-  background-image: url(./assets/images/see-source.png);
+  background-image: url(./images/source.png);
   background-position: 85% center;
   background-repeat: no-repeat;
   display: flex;
@@ -720,7 +741,7 @@ ul {
     flex-direction: row;
   }
 
-  .reverse {
+  #reverse {
     flex-direction: row-reverse;
   }
 
@@ -935,6 +956,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+
   /* Responsive nav bar */
   .mainMenu {
     width: 100%;
