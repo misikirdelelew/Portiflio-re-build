@@ -7,16 +7,15 @@ const toggleNavbar = () => {
 
 mobileNav.addEventListener('click', () => toggleNavbar());
 // The Hambergere menu Ends//
-
-// Array object//
+// The Dynamic Part starts here//
 const projects = [
     {
         name: 'Tonic',
         title: 'Tonic',
         description:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-        'featured image': './images/tonic-page-1.png',
-        'featured image desk': './images/snaposhot-1-desktop-p.png',
+        'image mobile': './images/tonic-page-1.png',
+        'image desktop': './images/snaposhot-1-desktop-p.png',
         technologies: ['html', 'css', 'javascript'],
         'link to live version':
             '',
@@ -29,8 +28,8 @@ const projects = [
         title: 'Multi-Post Stories',
         description:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-        'featured image': './images/Multi-post-stories.png',
-        'featured image desk': './images/multi-post-portfolio-desktop-1.svg',
+        'image mobile': './images/Multi-post-stories.png',
+        'image desktop': './images/multi-post-portfolio-desktop-1.svg',
         technologies: ['html', 'css', 'javascript'],
         'link to live version':
             '',
@@ -43,8 +42,8 @@ const projects = [
         title: 'Facebook 360',
         description:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-        'featured image': './images/Tonic-page3.png',
-        'featured image desk': './images/facebook-360-desktop.svg',
+        'image mobile': './images/Tonic-page3.png',
+        'image desktop': './images/facebook-360-desktop.svg',
         technologies: ['html', 'css', 'javascript'],
         'link to live version':
             '',
@@ -57,8 +56,8 @@ const projects = [
         title: 'Uber Navigation',
         description:
             'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-        'featured image': './images/multi-post-stories-2.png',
-        'featured image desk': './images/uber-nav-desktop.svg',
+        'image mobile': './images/multi-post-stories-2.png',
+        'image desktop': './images/uber-nav-desktop.svg',
         technologies: ['html', 'css', 'javascript'],
         'link to live version':
             '',
@@ -67,23 +66,24 @@ const projects = [
         id: 3,
     },
 ];
-projects.forEach((element, i) => {
+projects.forEach((element, k) => {
     const work = document.querySelector('.work');
     const cardDisplay = document.createElement('div');
     cardDisplay.classList = 'work-section';
-    if (i === 1) {
+    // this will reverse the flex items//
+    if (k === 1) {
         cardDisplay.setAttribute('id', 'reverse');
-    } else if (i === 3) {
+    } else if (k === 3) {
         cardDisplay.setAttribute('id', 'reverse');
     }
 
     const myPopup = `
-    <img src="${projects[i]['featured image']}" alt="Snapshot Portfolio" class="portfolio-img-1-mobile">
-  <img src="${projects[i]['featured image desk']}" alt="Snapshot Portfolio"
-      class="portfolio-img-1-desktop">
-  <div class="work-section-texts">
-      <h2 class="project-title-heading text-mobile">${projects[i].name}</h2>
-      <h2 class="project-title-heading text-desktop">${projects[i].title}</h2>
+    <img src="${projects[k]['image mobile']}" alt="img mobile" class="img-mobile">
+  <img src="${projects[k]['image desktop']}" alt="image desktop"
+      class="image-desktop">
+  <div class="work-header">
+      <h2 class="project-title-heading text-mobile">${projects[k].name}</h2>
+      <h2 class="project-title-heading text-desktop">${projects[k].title}</h2>
   
       <div class="cardItems">
           <h2 class="headingPart text-mobile">CANOPY</h2>
@@ -105,19 +105,19 @@ projects.forEach((element, i) => {
   
       <ul class="langTages">
           <li><a href="#"><img src="./images/Htmllogo.png" alt="Htmllogo"></a></li>
-          <li><a href="#"><img src="./images/ruby-n-rails-tag.png" alt="RubyLogo" class="portfolio-img-1-desktop"></a></li>
+          <li><a href="#"><img src="./images/ruby-n-rails-tag.png" alt="RubyLogo" class="image-desktop"></a></li>
           <li><a href="#"><img src="./images/csslogo.png" alt="csslogo"></a></li>
           <li><a href="#"><img src="./images/jslogo.png" alt="jslogo"></a></li>
       </ul>
-      <div class="btnSeeproject">
-          <button class="button-see-project" type="button" id="${projects[i].id}">
+      <div class="btnSeepro">
+          <button class="btnSee-project" type="button" id="${projects[k].id}">
               See project
           </button>
       </div>
   </div>
   
   `;
-    cardDisplay.innerHTML += myPopup;
+    cardDisplay.innerHTML += myPopup
     work.appendChild(cardDisplay);
 });
 // function is to create div and append it to body and add class to it
@@ -129,18 +129,18 @@ function creatDiv(event) {
     // add elements
     const header = document.createElement('div');
     header.classList.add('headerDisplay');
-    const projecthead = document.createElement('h2');
-    projecthead.classList.add('project-head');
-    const projectimg = document.createElement('img');
-    projectimg.classList.add('imgP');
-    const positiondiv = document.createElement('div');
-    positiondiv.classList.add('positionP');
-    const projectdescrip = document.createElement('p');
-    projectdescrip.classList.add('proDescription');
-    const langbtndiv = document.createElement('div');
-    langbtndiv.classList.add('proLang');
-    const projecttech = document.createElement('ul');
-    projecttech.classList.add('langContainer-pp');
+    const heading = document.createElement('h2');
+    heading.classList.add('project-head');
+    const proimage = document.createElement('img');
+    proimage.classList.add('imgP');
+    const positionpart = document.createElement('div');
+    positionpart.classList.add('positionP');
+    const prodescription = document.createElement('p');
+    prodescription.classList.add('proDescription');
+    const languagepart = document.createElement('div');
+    languagepart.classList.add('lang-btn-div');
+    const programmingtype = document.createElement('ul');
+    programmingtype.classList.add('langContainer-pp');
     const projectbtncontainer = document.createElement('div');
     const btnseelive = document.createElement('a');
     const btnseesource = document.createElement('a');
@@ -151,34 +151,34 @@ function creatDiv(event) {
     // append elements inside the div
     popup.append(
         header,
-        projecthead,
+        heading,
         closeButton,
-        projectimg,
-        positiondiv,
-        projectdescrip,
-        langbtndiv,
-        projecttech,
+        proimage,
+        positionpart,
+        prodescription,
+        languagepart,
+        programmingtype,
         projectbtncontainer,
     );
-    header.append(projecthead, closeButton);
-    positiondiv.append(projectdescrip, langbtndiv, projecttech, projectbtncontainer);
-    langbtndiv.append(projecttech, projectbtncontainer);
+    header.append(heading, closeButton);
+    positionpart.append(prodescription, languagepart, programmingtype, projectbtncontainer);
+    languagepart.append(programmingtype, projectbtncontainer);
     projectbtncontainer.append(btnseelive, btnseesource);
 
     // add content to the elements of div
     const projectId = parseInt(event.target.id, 10);
-    projecthead.textContent = projects[projectId].name;
-    projectimg.src = projects[projectId]['featured image'];
-    projectdescrip.textContent = projects[projectId].description;
+    heading.textContent = projects[projectId].name;
+    proimage.src = projects[projectId]['image mobile'];
+    prodescription.textContent = projects[projectId].description;
 
     for (let i = 0; i < projects[projectId].technologies.length; i += 1) {
         const projectLi = document.createElement('li');
         projectLi.className = 'languages-pp';
         projectLi.textContent = projects[projectId].technologies[i];
-        projecttech.appendChild(projectLi);
+        programmingtype.appendChild(projectLi);
     }
 
-    projectbtncontainer.classList.add('btn-container-class-pp');
+    projectbtncontainer.classList.add('btn-cont');
     btnseelive.href = projects[projectId]['link to live version'];
     btnseelive.classList.add('btn-seelive-pp');
     btnseelive.target = '_blank';
@@ -197,7 +197,7 @@ function creatDiv(event) {
 }
 
 // button  eventListener//
-const buttonsee = document.querySelectorAll('.button-see-project');
+const buttonsee = document.querySelectorAll('.btnSee-project');
 buttonsee.forEach((btn) => {
     btn.addEventListener('click', creatDiv);
 });
