@@ -171,7 +171,6 @@ function creatDiv(event) {
     languagepart.append(projectbtncontainer);
     projectbtncontainer.append(btnseelive);
     projectbtncontainer.append(btnseesource);
-
     // add content to the elements of div
     const projectnewId = parseInt(event.target.id, 20);
     heading.textContent = projects[projectnewId].name;
