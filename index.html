@@ -149,41 +149,31 @@
         </div>
 
     </section>
-    <!--Contact section of the page begins-->
-    <section class="contact-part" id="contactsection">
-        <div class="contactform-section">
-            <div class="contact-information">
-                <h2 class="contact-1">Contact me</h2>
-                <p class="par-1">If you have an application you
-                    are interested in developing, a
-                    feature that you need built or a
-                    project that needs coding. I'd
-                    love to help with it</p>
-                <form class="contact-form" action="https://formspree.io/f/mgedjayo" method="post">
-                    <ul class="contact-input-form">
-                        <li>
-                            <label><input class="contact-inputs" type="text" name="full_name" placeholder="Full name"
-                                    maxlength="30" required /></label>
-                        </li>
-                        <li>
-                            <label><input class="contact-inputs" type="email" name="email" placeholder="Email address"
-                                    required /></label>
-                        </li>
-                        <li>
-                            <label><textarea placeholder="Write your message here" class="contact-txt"
-                                    name="contact_text" cols="30" rows="5" maxlength="500" required></textarea></label>
-                        </li>
-                        <li class="contact-button-li">
-                            <button type="submit" class="contact-button">
-                                Get in Touch</button>
-                        </li>
-                    </ul>
-                </form>
-                <img src="images/last-line.svg" alt="end of portfolio">
-            </div>
-        </div>
+    <section class="contact-info" id="contactsec">
+        <article class="contact-info-user">
+            <h2 class="contact-me-h2">Contact Me</h2>
+            <p class="contact-p">If you have an application you are interested in developing, a feature that you
+                need built or a project that needs coding. I’d love to help with it </p>
+        </article>
+        <article class="form-input">
+            <form action="https://formspree.io/f/xpzbbbob" method="POST" class="form-contact" id="form-contact">
+                <label for="name"></label>
+                <input type="text" name="Name" placeholder="Write name." required maxlength="30" id="name">
+                <label for="email"></label>
+                <input type="email" name="Email" placeholder="example@gmail.com" required id="email">
+                <label for="msg-box"></label>
+                <textarea name="message" id="msg-box" cols="30" rows="10" placeholder="write your message in here"
+                    maxlength="500" required></textarea>
+                <button type="submit" class="get-in-touch-btn
+                ">Get It Touch</button>
+                <div class="error-message">
+                    <small id="error-show"></small>
+                </div>
+            </form>
+        </article>
     </section>
     <script src="./app.js"></script>
+    <script src="./formvalidation.js"></script>
 </body>
 
 </html>
