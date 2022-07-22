@@ -76,7 +76,7 @@ projects.forEach((element, k) => {
     } else if (k === 3) {
         cardDisplay.setAttribute('id', 'reverse');
     }
-
+    // The dynamic part of the work section begins//
     const myPopup = `
     <img src="${projects[k]['image mobile']}" alt="img mobile" class="img-mobile">
   <img src="${projects[k]['image desktop']}" alt="image desktop"
