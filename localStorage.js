@@ -1,3 +1,4 @@
+// This Code will preserve data in the browser
 
 const contactForm = document.forms[0];
 const formValues = {};
